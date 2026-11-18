@@ -14,7 +14,7 @@ class Config:
     products: list[dict[str, str]] = field(default_factory=list)
     check_interval_seconds: int = 300
     telegram: dict[str, Any] = field(default_factory=lambda: {
-        "enabled": False,
+        "enabled": True,
         "bot_token": "",
         "chat_id": "",
     })
